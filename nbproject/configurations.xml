@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="97">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <itemPath>source/Application.h</itemPath>
+      <itemPath>source/Constants.h</itemPath>
+      <itemPath>source/Logger.h</itemPath>
+      <itemPath>source/Shader.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <itemPath>source/Application.cpp</itemPath>
+      <itemPath>source/Logger.cpp</itemPath>
+      <itemPath>source/Shader.cpp</itemPath>
+      <itemPath>source/main.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <incDir>
+            <pElem>../../../libraries/glad-core-3.3/include</pElem>
+          </incDir>
+        </cTool>
+        <ccTool>
+          <standard>8</standard>
+          <incDir>
+            <pElem>../../../libraries/glfw-3.2.1.bin.WIN64/include</pElem>
+            <pElem>../../../libraries/glad-core-3.3/include</pElem>
+          </incDir>
+        </ccTool>
+        <linkerTool>
+          <output>start-win32</output>
+          <linkerAddLib>
+            <pElem>../../../libraries/glad-core-3.3/lib/mingw-64</pElem>
+            <pElem>../../../libraries/glfw-3.2.1.bin.WIN64/lib-mingw-w64</pElem>
+          </linkerAddLib>
+          <linkerLibItems>
+            <linkerLibLibItem>glad</linkerLibLibItem>
+            <linkerLibLibItem>glfw3dll</linkerLibLibItem>
+            <linkerLibLibItem>opengl32</linkerLibLibItem>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <item path="source/Application.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="source/Application.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="source/Constants.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="source/Logger.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="source/Logger.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="source/Shader.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="source/Shader.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="source/main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
