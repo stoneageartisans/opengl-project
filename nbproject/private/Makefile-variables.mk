@@ -3,4 +3,5 @@
 #
 # NOCDDL
 #
+# Windows-Debug configuration
 # linux-debug configuration

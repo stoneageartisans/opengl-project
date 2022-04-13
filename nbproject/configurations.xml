@@ -43,6 +43,7 @@
       </toolsSet>
       <compileType>
         <cTool>
+          <standard>10</standard>
           <incDir>
             <pElem>../../../libraries/glad-core-3.3/include</pElem>
           </incDir>
@@ -57,7 +58,7 @@
         <linkerTool>
           <output>start-win32</output>
           <linkerAddLib>
-            <pElem>../../../libraries/glad-core-3.3/lib/mingw-64</pElem>
+            <pElem>../../../libraries/glad-core-3.3/lib</pElem>
             <pElem>../../../libraries/glfw-3.2.1.bin.WIN64/lib-mingw-w64</pElem>
           </linkerAddLib>
           <linkerLibItems>
@@ -86,7 +87,7 @@
     </conf>
     <conf name="linux-debug" type="1">
       <toolsSet>
-        <compilerSet>GNU|GNU</compilerSet>
+        <compilerSet>default</compilerSet>
         <dependencyChecking>true</dependencyChecking>
         <rebuildPropChanged>false</rebuildPropChanged>
       </toolsSet>
