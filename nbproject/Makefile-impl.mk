@@ -27,11 +27,11 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 PROJECTNAME=glfw-base
 
 # Active Configuration
-DEFAULTCONF=Debug
+DEFAULTCONF=Windows-Debug
 CONF=${DEFAULTCONF}
 
 # All Configurations
-ALLCONFS=Debug 
+ALLCONFS=Windows-Debug linux-debug 
 
 
 # build

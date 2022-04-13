@@ -3,4 +3,4 @@
 #
 # NOCDDL
 #
-# Debug configuration
+# linux-debug configuration

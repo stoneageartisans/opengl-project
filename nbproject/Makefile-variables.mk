@@ -6,14 +6,14 @@
 CND_BASEDIR=`pwd`
 CND_BUILDDIR=build
 CND_DISTDIR=dist
-# Debug configuration
-CND_PLATFORM_Debug=MinGW_TDM-Windows
-CND_ARTIFACT_DIR_Debug=
-CND_ARTIFACT_NAME_Debug=start-win32
-CND_ARTIFACT_PATH_Debug=start-win32
-CND_PACKAGE_DIR_Debug=dist/Debug/MinGW_TDM-Windows/package
-CND_PACKAGE_NAME_Debug=glfw-base.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/MinGW_TDM-Windows/package/glfw-base.tar
+# linux-debug configuration
+CND_PLATFORM_linux-debug=GNU-Linux
+CND_ARTIFACT_DIR_linux-debug=
+CND_ARTIFACT_NAME_linux-debug=linux-debug
+CND_ARTIFACT_PATH_linux-debug=linux-debug
+CND_PACKAGE_DIR_linux-debug=dist/linux-debug/GNU-Linux/package
+CND_PACKAGE_NAME_linux-debug=glfw-base.tar
+CND_PACKAGE_PATH_linux-debug=dist/linux-debug/GNU-Linux/package/glfw-base.tar
 #
 # include compiler specific variables
 #
