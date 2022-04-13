@@ -35,18 +35,18 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/source/Application.o \
-	${OBJECTDIR}/source/Logger.o \
-	${OBJECTDIR}/source/Shader.o \
-	${OBJECTDIR}/source/main.o
+	${OBJECTDIR}/source/application.o \
+	${OBJECTDIR}/source/logger.o \
+	${OBJECTDIR}/source/main.o \
+	${OBJECTDIR}/source/shader.o
 
 
 # C Compiler Flags
-CFLAGS=
+CFLAGS=-m64
 
 # CC Compiler Flags
-CCFLAGS=
-CXXFLAGS=
+CCFLAGS=-m64
+CXXFLAGS=-m64
 
 # Fortran Compiler Flags
 FFLAGS=
@@ -64,25 +64,25 @@ LDLIBSOPTIONS=-L../../../libraries/glad-core-3.3/lib -L../../../libraries/glfw-3
 start-win32.exe: ${OBJECTFILES}
 	${LINK.cc} -o start-win32 ${OBJECTFILES} ${LDLIBSOPTIONS}
 
-${OBJECTDIR}/source/Application.o: source/Application.cpp
+${OBJECTDIR}/source/application.o: source/application.cpp
 	${MKDIR} -p ${OBJECTDIR}/source
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -I../../../libraries/glfw-3.2.1.bin.WIN64/include -I../../../libraries/glad-core-3.3/include -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/source/Application.o source/Application.cpp
+	$(COMPILE.cc) -g -I../../../libraries/glfw-3.2.1.bin.WIN64/include -I../../../libraries/glad-core-3.3/include -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/source/application.o source/application.cpp
 
-${OBJECTDIR}/source/Logger.o: source/Logger.cpp
+${OBJECTDIR}/source/logger.o: source/logger.cpp
 	${MKDIR} -p ${OBJECTDIR}/source
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -I../../../libraries/glfw-3.2.1.bin.WIN64/include -I../../../libraries/glad-core-3.3/include -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/source/Logger.o source/Logger.cpp
-
-${OBJECTDIR}/source/Shader.o: source/Shader.cpp
-	${MKDIR} -p ${OBJECTDIR}/source
-	${RM} "$@.d"
-	$(COMPILE.cc) -g -I../../../libraries/glfw-3.2.1.bin.WIN64/include -I../../../libraries/glad-core-3.3/include -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/source/Shader.o source/Shader.cpp
+	$(COMPILE.cc) -g -I../../../libraries/glfw-3.2.1.bin.WIN64/include -I../../../libraries/glad-core-3.3/include -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/source/logger.o source/logger.cpp
 
 ${OBJECTDIR}/source/main.o: source/main.cpp
 	${MKDIR} -p ${OBJECTDIR}/source
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -I../../../libraries/glfw-3.2.1.bin.WIN64/include -I../../../libraries/glad-core-3.3/include -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/source/main.o source/main.cpp
+	$(COMPILE.cc) -g -I../../../libraries/glfw-3.2.1.bin.WIN64/include -I../../../libraries/glad-core-3.3/include -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/source/main.o source/main.cpp
+
+${OBJECTDIR}/source/shader.o: source/shader.cpp
+	${MKDIR} -p ${OBJECTDIR}/source
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -I../../../libraries/glfw-3.2.1.bin.WIN64/include -I../../../libraries/glad-core-3.3/include -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/source/shader.o source/shader.cpp
 
 # Subprojects
 .build-subprojects:

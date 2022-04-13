@@ -4,10 +4,10 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
-      <itemPath>source/Application.h</itemPath>
-      <itemPath>source/Constants.h</itemPath>
-      <itemPath>source/Logger.h</itemPath>
-      <itemPath>source/Shader.h</itemPath>
+      <itemPath>source/application.h</itemPath>
+      <itemPath>source/constants.h</itemPath>
+      <itemPath>source/logger.h</itemPath>
+      <itemPath>source/shader.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
@@ -16,10 +16,10 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
-      <itemPath>source/Application.cpp</itemPath>
-      <itemPath>source/Logger.cpp</itemPath>
-      <itemPath>source/Shader.cpp</itemPath>
+      <itemPath>source/application.cpp</itemPath>
+      <itemPath>source/logger.cpp</itemPath>
       <itemPath>source/main.cpp</itemPath>
+      <itemPath>source/shader.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"
@@ -43,13 +43,15 @@
       </toolsSet>
       <compileType>
         <cTool>
+          <architecture>2</architecture>
           <standard>10</standard>
           <incDir>
             <pElem>../../../libraries/glad-core-3.3/include</pElem>
           </incDir>
         </cTool>
         <ccTool>
-          <standard>8</standard>
+          <architecture>2</architecture>
+          <standard>11</standard>
           <incDir>
             <pElem>../../../libraries/glfw-3.2.1.bin.WIN64/include</pElem>
             <pElem>../../../libraries/glad-core-3.3/include</pElem>
@@ -68,21 +70,21 @@
           </linkerLibItems>
         </linkerTool>
       </compileType>
-      <item path="source/Application.cpp" ex="false" tool="1" flavor2="0">
+      <item path="source/application.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="source/Application.h" ex="false" tool="3" flavor2="0">
+      <item path="source/application.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="source/Constants.h" ex="false" tool="3" flavor2="0">
+      <item path="source/constants.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="source/Logger.cpp" ex="false" tool="1" flavor2="0">
+      <item path="source/logger.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="source/Logger.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="source/Shader.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="source/Shader.h" ex="false" tool="3" flavor2="0">
+      <item path="source/logger.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="source/main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="source/shader.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="source/shader.h" ex="false" tool="3" flavor2="0">
       </item>
     </conf>
     <conf name="linux-debug" type="1">
@@ -99,21 +101,21 @@
           <output>linux-debug</output>
         </linkerTool>
       </compileType>
-      <item path="source/Application.cpp" ex="false" tool="1" flavor2="0">
+      <item path="source/application.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="source/Application.h" ex="false" tool="3" flavor2="0">
+      <item path="source/application.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="source/Constants.h" ex="false" tool="3" flavor2="0">
+      <item path="source/constants.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="source/Logger.cpp" ex="false" tool="1" flavor2="0">
+      <item path="source/logger.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="source/Logger.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="source/Shader.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="source/Shader.h" ex="false" tool="3" flavor2="0">
+      <item path="source/logger.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="source/main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="source/shader.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="source/shader.h" ex="false" tool="3" flavor2="0">
       </item>
     </conf>
   </confs>

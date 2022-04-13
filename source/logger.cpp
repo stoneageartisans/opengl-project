@@ -1,6 +1,5 @@
-#include "Logger.h"
-
 #include <iostream>
+#include "logger.h"
 
 void Logger::log(const char* message)
 {

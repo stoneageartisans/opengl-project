@@ -1,8 +1,7 @@
-#include "Application.h"
-
-#include "Constants.h"
-#include "Logger.h"
-#include "Shader.h"
+#include "application.h"
+#include "constants.h"
+#include "logger.h"
+#include "shader.h"
 
 Application::Application()
 {

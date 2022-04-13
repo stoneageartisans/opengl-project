@@ -1,11 +1,8 @@
-#include "Shader.h"
-
-#include "Logger.h"
-
-#include <glad/glad.h>
-
 #include <fstream>
 #include <iostream>
+#include <glad/glad.h>
+#include "logger.h"
+#include "shader.h"
 
 Shader::Shader(ShaderType type, const char* filename, bool verifyIt)
 {

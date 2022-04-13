@@ -7,9 +7,9 @@ using namespace std;
 
 class Logger
 {
-    public:
-        static void log(const char* message);
-        static void log(string& message);
+public:
+    static void log(const char* message);
+    static void log(string& message);
 };
 
 #endif /* LOGGER_H */
